@@ -1,7 +1,8 @@
-import {Component} from '../annotations';
+import {Component} from '/Users/i54659/Documents/SantaLetters/app/annotations';
+// import {Component} from '../annotations';
 
 @Component({
-    selector: 'test',
+    selector: 'home',
     template: require('./home.html'),
     style: require('./home.scss')
 })
