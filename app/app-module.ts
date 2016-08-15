@@ -1,0 +1,1 @@
+export let module = angular.module('app', ['ngMaterial']);
