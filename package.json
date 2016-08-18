@@ -6,6 +6,7 @@
     "postinstall": "typings install"
   },
   "dependencies": {
+    "@angular/router": "^0.2.0",
     "angular": "1.5.7",
     "angular-animate": "1.5.8",
     "angular-aria": "1.5.8",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "angular-mocks": "1.5.7",
+    "angular-ui-router": "0.3.1",
     "browser-sync": "2.12.8",
     "browser-sync-webpack-plugin": "1.0.1",
     "compression-webpack-plugin": "0.3.1",

@@ -1,0 +1,258 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose readDependencies loading dependencies from /Users/i54659/Documents/SantaLetters/package.json
+5 warn package.json @ No repository field.
+6 warn package.json @ No license field.
+7 verbose install where, deps [ '/Users/i54659/Documents/SantaLetters',
+7 verbose install   [ '@angular/router',
+7 verbose install     'angular',
+7 verbose install     'angular-animate',
+7 verbose install     'angular-aria',
+7 verbose install     'angular-material',
+7 verbose install     'font-awesome',
+7 verbose install     'jquery',
+7 verbose install     'angular-mocks',
+7 verbose install     'angular-ui-router',
+7 verbose install     'browser-sync',
+7 verbose install     'browser-sync-webpack-plugin',
+7 verbose install     'compression-webpack-plugin',
+7 verbose install     'cross-env',
+7 verbose install     'css-loader',
+7 verbose install     'file-loader',
+7 verbose install     'html-webpack-plugin',
+7 verbose install     'jasmine',
+7 verbose install     'karma',
+7 verbose install     'karma-jasmine',
+7 verbose install     'karma-phantomjs-launcher',
+7 verbose install     'karma-sourcemap-loader',
+7 verbose install     'karma-spec-reporter',
+7 verbose install     'karma-typescript-preprocessor',
+7 verbose install     'karma-webpack',
+7 verbose install     'node-sass',
+7 verbose install     'phantomjs-polyfill',
+7 verbose install     'phantomjs-prebuilt',
+7 verbose install     'raw-loader',
+7 verbose install     'sass-loader',
+7 verbose install     'style-loader',
+7 verbose install     'ts-loader',
+7 verbose install     'typescript',
+7 verbose install     'typings',
+7 verbose install     'url-loader',
+7 verbose install     'webpack',
+7 verbose install     'webpack-cleanup-plugin' ] ]
+8 verbose install where, peers [ '/Users/i54659/Documents/SantaLetters', [] ]
+9 verbose installManyTop reading for lifecycle /Users/i54659/Documents/SantaLetters/package.json
+10 info preinstall @
+11 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular/package.json
+12 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-animate/package.json
+13 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-aria/package.json
+14 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-material/package.json
+15 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-mocks/package.json
+16 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-ui-router/package.json
+17 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/browser-sync/package.json
+18 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/browser-sync-webpack-plugin/package.json
+19 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/compression-webpack-plugin/package.json
+20 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/cross-env/package.json
+21 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/css-loader/package.json
+22 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/file-loader/package.json
+23 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/font-awesome/package.json
+24 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/html-webpack-plugin/package.json
+25 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/jasmine/package.json
+26 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/jasmine-core/package.json
+27 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/jquery/package.json
+28 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma/package.json
+29 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-jasmine/package.json
+30 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-phantomjs-launcher/package.json
+31 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-sourcemap-loader/package.json
+32 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-spec-reporter/package.json
+33 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-typescript-preprocessor/package.json
+34 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-webpack/package.json
+35 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/node-sass/package.json
+36 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/phantomjs-polyfill/package.json
+37 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/phantomjs-prebuilt/package.json
+38 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/raw-loader/package.json
+39 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/sass-loader/package.json
+40 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/style-loader/package.json
+41 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/ts-loader/package.json
+42 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/typescript/package.json
+43 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/typings/package.json
+44 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/url-loader/package.json
+45 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/webpack/package.json
+46 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/webpack-cleanup-plugin/package.json
+47 verbose installManyTop reading scoped package data from /Users/i54659/Documents/SantaLetters/node_modules/@angular/router/package.json
+48 info package.json karma-jasmine@1.0.2 No README data
+49 info package.json ts-loader@0.8.2 No README data
+50 info package.json @angular/router@0.2.0 No description
+51 info package.json @angular/router@0.2.0 No repository field.
+52 info package.json @angular/router@0.2.0 No license field.
+53 info package.json angular-material@1.1.0-rc.5 No license field.
+54 info package.json compression-webpack-plugin@0.3.1 No license field.
+55 info package.json raw-loader@0.5.1 No license field.
+56 verbose readDependencies loading dependencies from /Users/i54659/Documents/SantaLetters/package.json
+57 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular/package.json
+58 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-animate/package.json
+59 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-aria/package.json
+60 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-material/package.json
+61 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-mocks/package.json
+62 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/angular-ui-router/package.json
+63 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/browser-sync/package.json
+64 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/browser-sync-webpack-plugin/package.json
+65 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/compression-webpack-plugin/package.json
+66 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/cross-env/package.json
+67 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/css-loader/package.json
+68 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/file-loader/package.json
+69 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/font-awesome/package.json
+70 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/html-webpack-plugin/package.json
+71 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/jasmine/package.json
+72 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/jasmine-core/package.json
+73 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/jquery/package.json
+74 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma/package.json
+75 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-jasmine/package.json
+76 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-phantomjs-launcher/package.json
+77 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-sourcemap-loader/package.json
+78 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-spec-reporter/package.json
+79 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-typescript-preprocessor/package.json
+80 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/karma-webpack/package.json
+81 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/node-sass/package.json
+82 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/phantomjs-polyfill/package.json
+83 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/phantomjs-prebuilt/package.json
+84 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/raw-loader/package.json
+85 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/sass-loader/package.json
+86 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/style-loader/package.json
+87 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/ts-loader/package.json
+88 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/typescript/package.json
+89 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/typings/package.json
+90 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/url-loader/package.json
+91 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/webpack/package.json
+92 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/webpack-cleanup-plugin/package.json
+93 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/browser-sync/package.json
+94 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/cross-env/package.json
+95 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/jasmine/package.json
+96 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/karma/package.json
+97 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/node-sass/package.json
+98 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/phantomjs/package.json
+99 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/tsc/package.json
+100 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/tsserver/package.json
+101 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/typings/package.json
+102 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/.bin/webpack/package.json
+103 verbose targetResolver reading package data from /Users/i54659/Documents/SantaLetters/node_modules/@angular/router/package.json
+104 verbose already installed skipping jquery@2.2.4 /Users/i54659/Documents/SantaLetters
+105 verbose already installed skipping angular-mocks@1.5.7 /Users/i54659/Documents/SantaLetters
+106 silly cache add args [ 'angular-ui-router@1.1.5', null ]
+107 verbose cache add spec angular-ui-router@1.1.5
+108 silly cache add parsed spec Result {
+108 silly cache add   raw: 'angular-ui-router@1.1.5',
+108 silly cache add   scope: null,
+108 silly cache add   name: 'angular-ui-router',
+108 silly cache add   rawSpec: '1.1.5',
+108 silly cache add   spec: '1.1.5',
+108 silly cache add   type: 'version' }
+109 silly addNamed angular-ui-router@1.1.5
+110 verbose addNamed "1.1.5" is a plain semver version for angular-ui-router
+111 silly mapToRegistry name angular-ui-router
+112 silly mapToRegistry using default registry
+113 silly mapToRegistry registry https://registry.npmjs.org/
+114 silly mapToRegistry data Result {
+114 silly mapToRegistry   raw: 'angular-ui-router',
+114 silly mapToRegistry   scope: null,
+114 silly mapToRegistry   name: 'angular-ui-router',
+114 silly mapToRegistry   rawSpec: '',
+114 silly mapToRegistry   spec: 'latest',
+114 silly mapToRegistry   type: 'tag' }
+115 silly mapToRegistry uri https://registry.npmjs.org/angular-ui-router
+116 verbose addNameVersion registry:https://registry.npmjs.org/angular-ui-router not in flight; fetching
+117 verbose already installed skipping browser-sync@2.12.8 /Users/i54659/Documents/SantaLetters
+118 verbose already installed skipping browser-sync-webpack-plugin@1.0.1 /Users/i54659/Documents/SantaLetters
+119 verbose already installed skipping compression-webpack-plugin@0.3.1 /Users/i54659/Documents/SantaLetters
+120 verbose already installed skipping cross-env@2.0.0 /Users/i54659/Documents/SantaLetters
+121 verbose already installed skipping css-loader@0.23.1 /Users/i54659/Documents/SantaLetters
+122 verbose already installed skipping file-loader@0.8.5 /Users/i54659/Documents/SantaLetters
+123 verbose already installed skipping html-webpack-plugin@2.17.0 /Users/i54659/Documents/SantaLetters
+124 verbose already installed skipping jasmine@2.4.1 /Users/i54659/Documents/SantaLetters
+125 verbose request uri https://registry.npmjs.org/angular-ui-router
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 1:50:19 PM
+128 verbose request id e4779bf645ff23f2
+129 verbose etag "B5YFMUNP3LLJJULNQX3VFU4CK"
+130 http request GET https://registry.npmjs.org/angular-ui-router
+131 verbose already installed skipping karma@0.13.22 /Users/i54659/Documents/SantaLetters
+132 verbose already installed skipping karma-jasmine@1.0.2 /Users/i54659/Documents/SantaLetters
+133 verbose already installed skipping karma-phantomjs-launcher@1.0.0 /Users/i54659/Documents/SantaLetters
+134 verbose already installed skipping karma-sourcemap-loader@0.3.7 /Users/i54659/Documents/SantaLetters
+135 verbose already installed skipping karma-spec-reporter@0.0.26 /Users/i54659/Documents/SantaLetters
+136 verbose already installed skipping karma-typescript-preprocessor@0.2.0 /Users/i54659/Documents/SantaLetters
+137 verbose already installed skipping karma-webpack@1.7.0 /Users/i54659/Documents/SantaLetters
+138 verbose already installed skipping node-sass@3.7.0 /Users/i54659/Documents/SantaLetters
+139 verbose already installed skipping phantomjs-polyfill@0.0.2 /Users/i54659/Documents/SantaLetters
+140 verbose already installed skipping phantomjs-prebuilt@2.1.7 /Users/i54659/Documents/SantaLetters
+141 verbose already installed skipping raw-loader@0.5.1 /Users/i54659/Documents/SantaLetters
+142 verbose already installed skipping sass-loader@3.2.0 /Users/i54659/Documents/SantaLetters
+143 verbose already installed skipping style-loader@0.13.1 /Users/i54659/Documents/SantaLetters
+144 verbose already installed skipping ts-loader@0.8.2 /Users/i54659/Documents/SantaLetters
+145 verbose already installed skipping typescript@1.8.10 /Users/i54659/Documents/SantaLetters
+146 verbose already installed skipping typings@1.0.4 /Users/i54659/Documents/SantaLetters
+147 verbose already installed skipping url-loader@0.5.7 /Users/i54659/Documents/SantaLetters
+148 verbose already installed skipping webpack@1.13.1 /Users/i54659/Documents/SantaLetters
+149 verbose already installed skipping webpack-cleanup-plugin@0.2.0 /Users/i54659/Documents/SantaLetters
+150 verbose already installed skipping @angular/router@^0.2.0 /Users/i54659/Documents/SantaLetters
+151 verbose already installed skipping angular@1.5.7 /Users/i54659/Documents/SantaLetters
+152 verbose already installed skipping angular-animate@1.5.8 /Users/i54659/Documents/SantaLetters
+153 verbose already installed skipping angular-aria@1.5.8 /Users/i54659/Documents/SantaLetters
+154 verbose already installed skipping angular-material@1.1.0-rc.5 /Users/i54659/Documents/SantaLetters
+155 verbose already installed skipping font-awesome@4.6.3 /Users/i54659/Documents/SantaLetters
+156 http 200 https://registry.npmjs.org/angular-ui-router
+157 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+157 verbose headers   etag: '"F37QVTJZX4D9DCJRIEL3LHCT"',
+157 verbose headers   'content-type': 'application/json',
+157 verbose headers   'content-encoding': 'gzip',
+157 verbose headers   'cache-control': 'max-age=300',
+157 verbose headers   'content-length': '7916',
+157 verbose headers   'accept-ranges': 'bytes',
+157 verbose headers   date: 'Thu, 18 Aug 2016 19:50:19 GMT',
+157 verbose headers   via: '1.1 varnish',
+157 verbose headers   age: '25',
+157 verbose headers   connection: 'keep-alive',
+157 verbose headers   'x-served-by': 'cache-den6020-DEN',
+157 verbose headers   'x-cache': 'HIT',
+157 verbose headers   'x-cache-hits': '1',
+157 verbose headers   'x-timer': 'S1471549819.515559,VS0,VE0',
+157 verbose headers   vary: 'Accept-Encoding' }
+158 silly get cb [ 200,
+158 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+158 silly get     etag: '"F37QVTJZX4D9DCJRIEL3LHCT"',
+158 silly get     'content-type': 'application/json',
+158 silly get     'content-encoding': 'gzip',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     'content-length': '7916',
+158 silly get     'accept-ranges': 'bytes',
+158 silly get     date: 'Thu, 18 Aug 2016 19:50:19 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     age: '25',
+158 silly get     connection: 'keep-alive',
+158 silly get     'x-served-by': 'cache-den6020-DEN',
+158 silly get     'x-cache': 'HIT',
+158 silly get     'x-cache-hits': '1',
+158 silly get     'x-timer': 'S1471549819.515559,VS0,VE0',
+158 silly get     vary: 'Accept-Encoding' } ]
+159 verbose get saving angular-ui-router to /Users/i54659/.npm/registry.npmjs.org/angular-ui-router/.cache.json
+160 verbose correctMkdir /Users/i54659/.npm correctMkdir not in flight; initializing
+161 verbose stack Error: version not found: angular-ui-router@1.1.5
+161 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:137:12)
+161 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+161 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+161 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+161 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+161 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+161 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+162 verbose statusCode 404
+163 verbose cwd /Users/i54659/Documents/SantaLetters
+164 error Darwin 15.6.0
+165 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+166 error node v4.4.5
+167 error npm  v2.15.5
+168 error version not found: angular-ui-router@1.1.5
+169 error If you need help, you may report this error at:
+169 error     <https://github.com/npm/npm/issues>
+170 verbose exit [ 1, true ]

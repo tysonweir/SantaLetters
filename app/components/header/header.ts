@@ -1,4 +1,4 @@
-import {Component} from '../../annotations';
+import {Component} from '../../annotations';//what is ..?
 
 @Component({
     selector: 'header',

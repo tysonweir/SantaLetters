@@ -1,7 +1,11 @@
 import {Component} from '../../annotations';
+export const MODULE_NAME = 'home';
+
+angular.module(MODULE_NAME,[]);
+
 
 @Component({
-    selector: 'home',
+    selector: MODULE_NAME + 'Page',
     template: require('./home.html'),
     style: require('./home.scss')
 })

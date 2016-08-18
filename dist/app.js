@@ -83,7 +83,8 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	"use strict";
-	exports.module = angular.module('app', ['ngMaterial']);
+	exports.MODULE_NAME = 'stantaLetters';
+	exports.module = angular.module('app', ['ngMaterial', 'ngComponentRouter']);
 
 
 /***/ },
@@ -99,12 +100,13 @@ webpackJsonp([0],[
 		"./annotations/pipe.ts": 22,
 		"./annotations/service.ts": 23,
 		"./app-module.ts": 15,
+		"./app-router.ts": 56,
 		"./app.ts": 24,
-		"./components/about/about.ts": 45,
-		"./components/header/header.ts": 28,
-		"./components/home/home.ts": 32,
-		"./components/letter-layouts/letter-layouts.ts": 48,
-		"./components/products/products.ts": 47,
+		"./components/about/about.ts": 28,
+		"./components/header/header.ts": 32,
+		"./components/home/home.ts": 36,
+		"./components/letter-layouts/letter-layouts.ts": 40,
+		"./components/products/products.ts": 44,
 		"./utility/string-extensions.ts": 14
 	};
 	function webpackContext(req) {
@@ -368,7 +370,7 @@ webpackJsonp([0],[
 /* 25 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\n</span>"
+	module.exports = "<span>test</span>"
 
 /***/ },
 /* 26 */
@@ -422,26 +424,28 @@ webpackJsonp([0],[
 	    return c > 3 && r && Object.defineProperty(target, key, r), r;
 	};
 	var annotations_1 = __webpack_require__(20);
-	var HeaderComponent = (function () {
-	    function HeaderComponent() {
+	exports.MODULE_NAME = 'about';
+	angular.module(exports.MODULE_NAME, []);
+	var AboutComponent = (function () {
+	    function AboutComponent() {
 	    }
-	    HeaderComponent = __decorate([
+	    AboutComponent = __decorate([
 	        annotations_1.Component({
-	            selector: 'header',
+	            selector: exports.MODULE_NAME + 'Page',
 	            template: __webpack_require__(29),
 	            style: __webpack_require__(30)
 	        })
-	    ], HeaderComponent);
-	    return HeaderComponent;
+	    ], AboutComponent);
+	    return AboutComponent;
 	}());
-	exports.HeaderComponent = HeaderComponent;
+	exports.AboutComponent = AboutComponent;
 
 
 /***/ },
 /* 29 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--Header-->\n<header>\n    <!--todo: hamburger-->\n    <div>\n        <!--productLogo-->\n        <img src=\"../global/images/santa_claus_initial.jpg\">\n    </div>\n    <nav>\n        <a class=\"nav-items\">LETTERS LAYOUTS</a>\n        <a class=\"nav-items\">PRODUCTS</a>\n        <a class=\"nav-items\">ABOUT</a>\n    </nav>\n</header>"
+	module.exports = "<div>about page</div>"
 
 /***/ },
 /* 30 */
@@ -451,228 +455,6 @@ webpackJsonp([0],[
 	
 	// load the styles
 	var content = __webpack_require__(31);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(13)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./header.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./header.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(12)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"header.scss","sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var annotations_1 = __webpack_require__(20);
-	var MatchArrayComponent = (function () {
-	    function MatchArrayComponent() {
-	        this.array1 = ["cat", "hat", "bat"];
-	        this.array2 = ["ball", "cat"];
-	        this.array3 = [];
-	    }
-	    MatchArrayComponent.prototype.getMatch = function () {
-	        this.array3 = [];
-	        for (var i = 0; i < this.array1.length; i++) {
-	            for (var e = 0; e < this.array2.length; e++) {
-	                if (this.array1[i] === this.array2[e])
-	                    this.array3.push(this.array1[i]);
-	            }
-	        }
-	    };
-	    MatchArrayComponent = __decorate([
-	        annotations_1.Component({
-	            selector: 'home',
-	            template: __webpack_require__(33),
-	            style: __webpack_require__(34)
-	        })
-	    ], MatchArrayComponent);
-	    return MatchArrayComponent;
-	}());
-	exports.MatchArrayComponent = MatchArrayComponent;
-
-
-/***/ },
-/* 33 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div>\n    product body\n</div>\n"
-
-/***/ },
-/* 34 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(35);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(13)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./home.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./home.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(12)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home.scss","sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var annotations_1 = __webpack_require__(20);
-	var AboutComponent = (function () {
-	    function AboutComponent() {
-	    }
-	    AboutComponent = __decorate([
-	        annotations_1.Component({
-	            selector: 'about',
-	            template: __webpack_require__(49),
-	            style: __webpack_require__(50)
-	        })
-	    ], AboutComponent);
-	    return AboutComponent;
-	}());
-	exports.AboutComponent = AboutComponent;
-
-
-/***/ },
-/* 46 */,
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var annotations_1 = __webpack_require__(20);
-	var ProductComponent = (function () {
-	    function ProductComponent() {
-	    }
-	    ProductComponent = __decorate([
-	        annotations_1.Component({
-	            selector: 'products',
-	            template: __webpack_require__(52),
-	            style: __webpack_require__(53)
-	        })
-	    ], ProductComponent);
-	    return ProductComponent;
-	}());
-	exports.ProductComponent = ProductComponent;
-
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var annotations_1 = __webpack_require__(20);
-	var LetterLayoutComponent = (function () {
-	    function LetterLayoutComponent() {
-	    }
-	    LetterLayoutComponent = __decorate([
-	        annotations_1.Component({
-	            selector: 'letterLayouts',
-	            template: __webpack_require__(55),
-	            style: __webpack_require__(56)
-	        })
-	    ], LetterLayoutComponent);
-	    return LetterLayoutComponent;
-	}());
-	exports.LetterLayoutComponent = LetterLayoutComponent;
-
-
-/***/ },
-/* 49 */
-/***/ function(module, exports) {
-
-	module.exports = "<div>about page</div>"
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(51);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -692,7 +474,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 51 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -706,19 +488,47 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 52 */
-/***/ function(module, exports) {
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div>product page</div>"
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var annotations_1 = __webpack_require__(20); //what is ..?
+	var HeaderComponent = (function () {
+	    function HeaderComponent() {
+	    }
+	    HeaderComponent = __decorate([
+	        //what is ..?
+	        annotations_1.Component({
+	            selector: 'header',
+	            template: __webpack_require__(33),
+	            style: __webpack_require__(34)
+	        })
+	    ], HeaderComponent);
+	    return HeaderComponent;
+	}());
+	exports.HeaderComponent = HeaderComponent;
+
 
 /***/ },
-/* 53 */
+/* 33 */
+/***/ function(module, exports) {
+
+	module.exports = "<!--Header-->\n<header>\n    <!--todo: hamburger-->\n    <div>\n        <!--productLogo-->\n        <img src=\"/global/images/santa_claus_initial.jpg\"> \n    </div>\n    <nav>\n        <a class=\"nav-items\" ui-view=\"letter-layout\">LETTERS LAYOUTS</a>\n        <a class=\"nav-items\" ui-view=\"products\">PRODUCTS</a>\n        <a class=\"nav-items\" ui-view=\"about\">ABOUT</a>\n    </nav>\n</header>"
+
+/***/ },
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(54);
+	var content = __webpack_require__(35);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -727,8 +537,8 @@ webpackJsonp([0],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./products.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./products.scss");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./header.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./header.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -738,7 +548,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 54 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -746,25 +556,141 @@ webpackJsonp([0],[
 	
 	
 	// module
-	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"products.scss","sourceRoot":"webpack://"}]);
+	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"header.scss","sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 55 */
-/***/ function(module, exports) {
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div>Letter-layout page</div>"
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var annotations_1 = __webpack_require__(20);
+	exports.MODULE_NAME = 'home';
+	angular.module(exports.MODULE_NAME, []);
+	var MatchArrayComponent = (function () {
+	    function MatchArrayComponent() {
+	        this.array1 = ["cat", "hat", "bat"];
+	        this.array2 = ["ball", "cat"];
+	        this.array3 = [];
+	    }
+	    MatchArrayComponent.prototype.getMatch = function () {
+	        this.array3 = [];
+	        for (var i = 0; i < this.array1.length; i++) {
+	            for (var e = 0; e < this.array2.length; e++) {
+	                if (this.array1[i] === this.array2[e])
+	                    this.array3.push(this.array1[i]);
+	            }
+	        }
+	    };
+	    MatchArrayComponent = __decorate([
+	        annotations_1.Component({
+	            selector: exports.MODULE_NAME + 'Page',
+	            template: __webpack_require__(37),
+	            style: __webpack_require__(38)
+	        })
+	    ], MatchArrayComponent);
+	    return MatchArrayComponent;
+	}());
+	exports.MatchArrayComponent = MatchArrayComponent;
+
 
 /***/ },
-/* 56 */
+/* 37 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n   home\n</div>\n"
+
+/***/ },
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(57);
+	var content = __webpack_require__(39);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(13)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./home.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./home.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(12)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home.scss","sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var annotations_1 = __webpack_require__(20);
+	exports.MODULE_NAME = 'letter-layouts';
+	angular.module(exports.MODULE_NAME, []);
+	var LetterLayoutComponent = (function () {
+	    function LetterLayoutComponent() {
+	    }
+	    LetterLayoutComponent = __decorate([
+	        annotations_1.Component({
+	            selector: exports.MODULE_NAME + 'Page',
+	            template: __webpack_require__(41),
+	            style: __webpack_require__(42)
+	        })
+	    ], LetterLayoutComponent);
+	    return LetterLayoutComponent;
+	}());
+	exports.LetterLayoutComponent = LetterLayoutComponent;
+
+
+/***/ },
+/* 41 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>Letter-layout page</div>"
+
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(43);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -784,7 +710,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 57 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -795,6 +721,108 @@ webpackJsonp([0],[
 	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"letter-layouts.scss","sourceRoot":"webpack://"}]);
 	
 	// exports
+
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var annotations_1 = __webpack_require__(20);
+	exports.MODULE_NAME = 'products';
+	angular.module(exports.MODULE_NAME, []);
+	var ProductComponent = (function () {
+	    function ProductComponent() {
+	    }
+	    ProductComponent = __decorate([
+	        annotations_1.Component({
+	            selector: exports.MODULE_NAME + 'Page',
+	            template: __webpack_require__(45),
+	            style: __webpack_require__(46)
+	        })
+	    ], ProductComponent);
+	    return ProductComponent;
+	}());
+	exports.ProductComponent = ProductComponent;
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>product page</div>"
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(47);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(13)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./products.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/sass-loader/index.js?sourceMap!./products.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(12)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"products.scss","sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var about_1 = __webpack_require__(28);
+	var home_1 = __webpack_require__(36);
+	var products_1 = __webpack_require__(44);
+	var letter_layouts_1 = __webpack_require__(40);
+	angular.module('app', ['ngComponentRouter', home_1.MODULE_NAME, about_1.MODULE_NAME, products_1.MODULE_NAME, letter_layouts_1.MODULE_NAME])
+	    .config(function ($locationProvider) {
+	    $locationProvider.html5Mode(true);
+	})
+	    .value('$routerRootComponent', 'app')
+	    .component('app', {
+	    template: 'app.html'
+	});
 
 
 /***/ }
