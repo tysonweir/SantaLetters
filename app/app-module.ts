@@ -1,2 +1,2 @@
 export let MODULE_NAME: string = 'stantaLetters';
-export let module = angular.module('app', ['ngMaterial', 'ngComponentRouter']);
+export let module = angular.module('app', ['ngMaterial', 'ui.router']);
