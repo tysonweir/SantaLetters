@@ -5166,7 +5166,7 @@ webpackJsonp([0],[
 /* 49 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--Header-->\n<!--todo: hamburger-->\n<div class=\"sl-header\">\n    <!--productLogo-->\n    <img ng-src=\"{{$ctrl.image}}\">\n    <nav class=\"sl-nav\">\n        <a class=\"sl-logo wonderland-text\" ui-sref=\"home\">SANTA LETTERS</a>\n        <a class=\"sl-nav-items\" ui-sref=\"products\">PRODUCTS</a>\n        <a class=\"sl-nav-items\" ui-sref=\"letter-layouts\">LETTERS TYPES</a>\n        <a class=\"sl-nav-items\" ui-sref=\"about\">ABOUT</a>\n    </nav>\n</div>"
+	module.exports = "<!--Header-->\n<!--todo: hamburger-->\n<div class=\"sl-header\">\n    <!--productLogo-->\n    <img ng-src=\"{{$ctrl.image}}\">\n    <nav class=\"sl-nav wonderland-text\">\n        <a class=\"sl-logo\" ui-sref=\"home\">Santa Letters</a>\n        <a class=\"sl-nav-items\" ui-sref=\"products\">Products</a>\n        <a class=\"sl-nav-items\" ui-sref=\"letter-layouts\">Letter Types</a>\n        <a class=\"sl-nav-items\" ui-sref=\"about\">About</a>\n    </nav>\n</div>"
 
 /***/ },
 /* 50 */
