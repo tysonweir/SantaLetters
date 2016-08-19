@@ -1,13 +1,12 @@
 <!--Header-->
-<header>
-    <!--todo: hamburger-->
-    <div>
-        <!--productLogo-->
-        <img src="/global/images/santa_claus_initial.jpg"> 
-    </div>
-    <nav>
-        <a class="nav-items" ui-view="letter-layout">LETTERS LAYOUTS</a>
-        <a class="nav-items" ui-view="products">PRODUCTS</a>
-        <a class="nav-items" ui-view="about">ABOUT</a>
+<!--todo: hamburger-->
+<div class="sl-header">
+    <!--productLogo-->
+    <img ng-src="{{$ctrl.image}}">
+    <nav class="sl-nav">
+        <a class="sl-logo wonderland-text" ui-sref="home">SANTA LETTERS</a>
+        <a class="sl-nav-items" ui-sref="products">PRODUCTS</a>
+        <a class="sl-nav-items" ui-sref="letter-layouts">LETTERS TYPES</a>
+        <a class="sl-nav-items" ui-sref="about">ABOUT</a>
     </nav>
-</header>
+</div>

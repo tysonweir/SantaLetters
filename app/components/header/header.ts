@@ -1,4 +1,4 @@
-import {Component} from '../../annotations';//what is ..?
+import {Component} from '../../annotations';  
 
 @Component({
     selector: 'header',
@@ -6,6 +6,6 @@ import {Component} from '../../annotations';//what is ..?
     style: require('./header.scss')
 })
 export class HeaderComponent {
-
+    public image = require("./santaLogo.png");
 }
 

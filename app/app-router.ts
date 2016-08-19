@@ -5,22 +5,22 @@ import {MODULE_NAME as letters} from './components/letter-layouts/letter-layouts
 
 
 angular.module('app')
-.config(['$stateProvider',($stateProvider:angular.ui.IStateProvider):void => {
+.config(['$stateProvider',($stateProvider):void => {
     $stateProvider
       .state(home, {
         url: '/',
-        templateUrl: './components/home/home.html'
+        template: require('./components/home/home.html')
       })
       .state(about,{
         url:'/about',
-        templateUrl: './components/about/about.html'
+        template: require('./components/about/about.html')
       })
       .state(products,{
         url:'/products',
-        templateUrl: './components/products/products.html'
+        template: require('./components/products/products.html')
       })
       .state(letters,{
         url:'/letters',
-        templateUrl: './components/letter-layouts/letter-layouts.html'
+        template: require('./components/letter-layouts/letter-layouts.html')
       })
 }]) 
