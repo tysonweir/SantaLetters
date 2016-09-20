@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'wonderLandFont';
+  src: url("./global/fonts/beyondWonderland.ttf") format("truetype"); }
+.wonderland-text {
+  font-family: 'wonderLandFont'; }
+
+/*# sourceMappingURL=app.css.map */

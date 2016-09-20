@@ -3,9 +3,10 @@ import {Component} from '../../annotations';
 @Component({
     selector: 'header',
     template: require('./header.html'),
-    style: require('./header.scss')
+    style: require('./_header.scss')
 })
 export class HeaderComponent {
-    public image = require("./santaLogo.png");
+    public logoImage = require("./santaLogo.png");
+    public headerImage= require("./headerImage.png");    
 }
 

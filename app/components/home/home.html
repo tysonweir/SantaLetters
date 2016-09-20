@@ -1,3 +1,22 @@
-<div>
-    home
+<div layout="column">
+    <img ng-src="{{$ctrl.heroImage}}">
+    <div> {{$ctrl.stringhere}}</div>
+    <div class="sl-hero-contianer">
+        <div>
+            <div>You better watch out.... Santa Clause is coming to town.</div>
+            <div>Need to write Santa a letter</div>
+            <md-button class="sl-hero-button" ui-sref="letter-layouts">Start Here</md-button>
+        </div>
+    </div>
+    <div layout="row">
+        <div flex>
+            image
+        </div>
+        <div flex>
+            image 2
+        </div>
+        <div flex>
+            image 3
+        </div>
+    </div>
 </div>

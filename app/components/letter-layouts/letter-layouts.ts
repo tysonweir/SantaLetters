@@ -6,7 +6,7 @@ angular.module(MODULE_NAME, []);
 @Component({
     selector: MODULE_NAME + 'Page',
     template: require('./letter-layouts.html'),
-    style: require('./letter-layouts.scss')
+    style: require('./_letter-layouts.scss')
 })
 export class LetterLayoutComponent {
 

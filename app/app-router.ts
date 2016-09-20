@@ -5,7 +5,9 @@ import {MODULE_NAME as letters} from './components/letter-layouts/letter-layouts
 
 
 angular.module('app')
-.config(['$stateProvider',($stateProvider):void => {
+.config(['$stateProvider', '$urlRouterProvider',($stateProvider, $urlRouterProvider):void => {
+    $urlRouterProvider.otherwise('/');
+
     $stateProvider
       .state(home, {
         url: '/',

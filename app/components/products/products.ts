@@ -7,7 +7,7 @@ angular.module(MODULE_NAME, []);
 @Component({
     selector: MODULE_NAME + 'Page',
     template: require('./products.html'),
-    style: require('./products.scss')
+    style: require('./_products.scss')
 })
 export class ProductComponent {
 

@@ -12088,34 +12088,46 @@ md-tooltip {
 @media print {
   .hide-print:not(.show-print):not(.show) {
     display: none !important; } }
+.sl-hero-contianer {
+  margin: auto;
+  font-size: 19px;
+  font-family: fantasy;
+  height: 455px;
+  width: 68%;
+  margin-top: 14px;
+  padding: 2px;
+  border-radius: 3px; }
+  .sl-hero-contianer .sl-hero-button {
+    margin: 0, auto;
+    width: 50%; }
 @font-face {
   font-family: 'wonderLandFont';
   src: url(public/fonts/beyondWonderland.ttf) format("truetype"); }
 
 .wonderland-text {
   font-family: 'wonderLandFont'; }
-.sl-header img {
-  width: 80px;
-  height: auto;
-  margin-left: 56px; }
-
-.sl-header .sl-nav {
-  padding: 2px;
-  font-size: 25px;
-  padding: 3px;
-  cursor: pointer;
-  letter-spacing: 4px; }
-  .sl-header .sl-nav .sl-logo {
-    padding-right: 13px;
-    color: red;
-    text-decoration: none; }
-    .sl-header .sl-nav .sl-logo:hover {
-      color: gold; }
-  .sl-header .sl-nav .sl-nav-items {
-    padding-right: 6px;
-    color: green;
-    text-decoration: none; }
-    .sl-header .sl-nav .sl-nav-items:hover {
+.sl-header {
+  background-image: url(b66f6c4e75231e8c8ff791364b3f94d8.png); }
+  .sl-header img {
+    width: 80px;
+    height: auto;
+    margin-left: 56px; }
+  .sl-header .sl-nav {
+    padding: 2px;
+    font-size: 25px;
+    padding: 3px;
+    cursor: pointer;
+    letter-spacing: 4px; }
+    .sl-header .sl-nav a {
+      text-decoration: none;
+      color: green; }
+      .sl-header .sl-nav a:hover {
+        color: red; }
+    .sl-header .sl-nav .sl-logo {
+      padding-right: 13px; }
+    .sl-header .sl-nav .sl-nav-items {
+      padding-right: 6px; }
+    .sl-header .sl-nav .sl-activeTab {
       color: red; }
 
 /*# sourceMappingURL=app.css.map*/
