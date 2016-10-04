@@ -11,7 +11,7 @@ angular.module('app')
     $stateProvider
       .state(home, {
         url: '/',
-        template: require('./components/home/home.html')
+        template: '<home-page></home-page>'
       })
       .state(about,{
         url:'/about',

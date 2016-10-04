@@ -11,7 +11,6 @@ angular.module(MODULE_NAME,[]);
 })
 export class HomeComponent {
     public heroImage= require("./heroImage.png");
-    public headerImage= require("./headerImage.1.png"); 
     public stringhere: string = 'here I am';
 }
 

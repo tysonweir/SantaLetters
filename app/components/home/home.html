@@ -1,12 +1,11 @@
 <div layout="column">
-    <img ng-src="{{$ctrl.heroImage}}">
-    <div> {{$ctrl.stringhere}}</div>
     <div class="sl-hero-contianer">
-        <div>
-            <div>You better watch out.... Santa Clause is coming to town.</div>
-            <div>Need to write Santa a letter</div>
-            <md-button class="sl-hero-button" ui-sref="letter-layouts">Start Here</md-button>
-        </div>
+        <a class="sl-letter-writing-image" ng-style="{'background-image': 'url({{$ctrl.heroImage}})'}">
+            <div class="sl-hero-text-contianer">
+                <div>You better watch out....<br>Santa Clause is coming to town.</div>
+                <div>Need to write Santa a letter</div>
+                <md-button class="sl-hero-button" ui-sref="letter-layouts">Start Here</md-button>
+            </div>
     </div>
     <div layout="row">
         <div flex>

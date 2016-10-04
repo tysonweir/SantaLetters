@@ -12093,13 +12093,29 @@ md-tooltip {
   font-size: 19px;
   font-family: fantasy;
   height: 455px;
-  width: 68%;
+  width: 78%;
   margin-top: 14px;
   padding: 2px;
   border-radius: 3px; }
   .sl-hero-contianer .sl-hero-button {
     margin: 0, auto;
     width: 50%; }
+  .sl-hero-contianer a {
+    display: table;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 416px;
+    background-repeat: no-repeat; }
+  .sl-hero-contianer .sl-hero-text-contianer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative; }
+  .sl-hero-contianer .sl-hero-button {
+    height: 25px;
+    width: 123px; }
 @font-face {
   font-family: 'wonderLandFont';
   src: url(public/fonts/beyondWonderland.ttf) format("truetype"); }
