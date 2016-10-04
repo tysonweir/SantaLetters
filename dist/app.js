@@ -4979,6 +4979,11 @@ webpackJsonp([0],[
 	var HomeComponent = (function () {
 	    function HomeComponent() {
 	        this.heroImage = __webpack_require__(31);
+	        this.productOne = __webpack_require__(62);
+	        this.productTwo = __webpack_require__(63);
+	        this.productThree = __webpack_require__(64);
+	        this.slAbout = __webpack_require__(65);
+	        this.slShopNow = __webpack_require__(66);
 	        this.stringhere = 'here I am';
 	    }
 	    HomeComponent = __decorate([
@@ -5003,7 +5008,7 @@ webpackJsonp([0],[
 /* 32 */
 /***/ function(module, exports) {
 
-	module.exports = "<div layout=\"column\">\n    <div class=\"sl-hero-contianer\">\n        <a class=\"sl-letter-writing-image\" ng-style=\"{'background-image': 'url({{$ctrl.heroImage}})'}\">\n            <div class=\"sl-hero-text-contianer\">\n                <div>You better watch out....<br>Santa Clause is coming to town.</div>\n                <div>Need to write Santa a letter</div>\n                <md-button class=\"sl-hero-button\" ui-sref=\"letter-layouts\">Start Here</md-button>\n            </div>\n    </div>\n    <div layout=\"row\">\n        <div flex>\n            image\n        </div>\n        <div flex>\n            image 2\n        </div>\n        <div flex>\n            image 3\n        </div>\n    </div>\n</div>"
+	module.exports = "<div class=\"sl-homepage\" layout=\"column\">\n    <div class=\"sl-hero-contianer\">\n        <div class=\"sl-letter-writing-image\" ng-style=\"{'background-image': 'url({{$ctrl.heroImage}})'}\">\n            <div class=\"sl-hero-text-contianer\">\n                <div>You better hurry!!<br>Santa Clause is coming to town.</div>\n                <div>Write a letter to Santa Clause</div>\n                <md-button class=\"sl-hero-button\" ui-sref=\"letter-layouts\">Start Here</md-button>\n            </div>\n        </div>\n    </div>\n    <div class=\"sl-feature-text\">\n        <h1>Featured Letters</h1>\n        <div class=\"sl-subtitle\">Letters written from Santa himself.</div>\n    </div>\n    <div class=\"sl-shelf-container\" layout=\"row\">\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productOne}}\">\n            <div>$5 | letter</div>\n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productTwo}}\">\n            <div>$8 | twin pack</div>            \n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productThree}}\">\n            <div>$10 | triplet pack</div>            \n        </div>\n    </div>\n    <div class=\"sl-secondary-hero-container\" layout=\"row\">\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slShopNow}})'}\">\n            <div class=\"sl-shop-now-text\">\n                <div class=\"sl-secondary-hero-header\">Our Best Selling Letters</div>\n                <div class=\"sl-secondary-hero-link\">Shop now</div>\n            </div>\n            </div>\n        </div>\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slAbout}})'}\">  \n                <div class=\"sl-about-text\">\n                    <div class=\"sl-secondary-hero-header\">Learn how Santa Clause Letter can to be.</div>\n                    <div class=\"sl-secondary-hero-link\">Long long time ago</div>\n                </div>\n            </div> \n        </div>\n    </div>\n</div>"
 
 /***/ },
 /* 33 */
@@ -5189,6 +5194,45 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "3f77a6c7782d6eb7ae1b2e78400b9fd6.jpg";
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "fd395ca3d69bade9e493621e3fb7c16d.png";
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "832d5ee5999fd71c1726a719e70d7806.png";
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ca41f9b495993b4ee143fad451d5dbec.jpg";
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a0a0b5b458732ed34232dbc40931f2aa.jpg";
 
 /***/ }
 ]);

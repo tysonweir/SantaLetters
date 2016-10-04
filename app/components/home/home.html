@@ -1,21 +1,47 @@
-<div layout="column">
+<div class="sl-homepage" layout="column">
     <div class="sl-hero-contianer">
-        <a class="sl-letter-writing-image" ng-style="{'background-image': 'url({{$ctrl.heroImage}})'}">
+        <div class="sl-letter-writing-image" ng-style="{'background-image': 'url({{$ctrl.heroImage}})'}">
             <div class="sl-hero-text-contianer">
-                <div>You better watch out....<br>Santa Clause is coming to town.</div>
-                <div>Need to write Santa a letter</div>
+                <div>You better hurry!!<br>Santa Clause is coming to town.</div>
+                <div>Write a letter to Santa Clause</div>
                 <md-button class="sl-hero-button" ui-sref="letter-layouts">Start Here</md-button>
             </div>
+        </div>
     </div>
-    <div layout="row">
+    <div class="sl-feature-text">
+        <h1>Featured Letters</h1>
+        <div class="sl-subtitle">Letters written from Santa himself.</div>
+    </div>
+    <div class="sl-shelf-container" layout="row">
         <div flex>
-            image
+            <img class="sl-shelf-item" ng-src="{{$ctrl.productOne}}">
+            <div>$5 | letter</div>
         </div>
         <div flex>
-            image 2
+            <img class="sl-shelf-item" ng-src="{{$ctrl.productTwo}}">
+            <div>$8 | twin pack</div>            
         </div>
         <div flex>
-            image 3
+            <img class="sl-shelf-item" ng-src="{{$ctrl.productThree}}">
+            <div>$10 | triplet pack</div>            
+        </div>
+    </div>
+    <div class="sl-secondary-hero-container" layout="row">
+        <div>
+            <div class="sl-secondary-hero-image" ng-style="{'background-image': 'url({{$ctrl.slShopNow}})'}">
+            <div class="sl-shop-now-text">
+                <div class="sl-secondary-hero-header">Our Best Selling Letters</div>
+                <div class="sl-secondary-hero-link">Shop now</div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div class="sl-secondary-hero-image" ng-style="{'background-image': 'url({{$ctrl.slAbout}})'}">  
+                <div class="sl-about-text">
+                    <div class="sl-secondary-hero-header">Learn how Santa Clause Letter can to be.</div>
+                    <div class="sl-secondary-hero-link">Long long time ago</div>
+                </div>
+            </div> 
         </div>
     </div>
 </div>

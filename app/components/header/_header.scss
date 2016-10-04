@@ -16,9 +16,9 @@
          
         a {
             text-decoration: none;
-            color: green;
+            color: black;
             &:hover{
-                color: red;
+                color: #ff4747;
             }
         }  
         .sl-logo{
@@ -28,7 +28,7 @@
             padding-right: 6px;
         }
         .sl-activeTab{
-            color: red;
+             color: #ff4747;;
         }
     }
 }

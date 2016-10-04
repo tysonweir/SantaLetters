@@ -11,6 +11,11 @@ angular.module(MODULE_NAME,[]);
 })
 export class HomeComponent {
     public heroImage= require("./heroImage.png");
+    public productOne= require("./example1.jpg");    
+    public productTwo= require("./example2.png");    
+    public productThree= require("./example3.png");
+    public slAbout= require("./christmas1.jpg");    
+    public slShopNow= require("./christmas2.jpg");                        
     public stringhere: string = 'here I am';
 }
 

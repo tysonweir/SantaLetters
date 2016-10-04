@@ -12088,34 +12088,86 @@ md-tooltip {
 @media print {
   .hide-print:not(.show-print):not(.show) {
     display: none !important; } }
-.sl-hero-contianer {
+.sl-homepage .sl-hero-contianer {
   margin: auto;
   font-size: 19px;
   font-family: fantasy;
   height: 455px;
   width: 78%;
-  margin-top: 14px;
-  padding: 2px;
-  border-radius: 3px; }
-  .sl-hero-contianer .sl-hero-button {
+  margin-top: 14px; }
+  .sl-homepage .sl-hero-contianer .sl-hero-button {
     margin: 0, auto;
     width: 50%; }
-  .sl-hero-contianer a {
+  .sl-homepage .sl-hero-contianer .sl-letter-writing-image {
     display: table;
     background-size: cover;
     background-position: center;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 100%;
-    height: 416px;
+    height: 383px;
     background-repeat: no-repeat; }
-  .sl-hero-contianer .sl-hero-text-contianer {
+  .sl-homepage .sl-hero-contianer .sl-hero-text-contianer {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     position: relative; }
-  .sl-hero-contianer .sl-hero-button {
+  .sl-homepage .sl-hero-contianer .sl-hero-button {
     height: 25px;
     width: 123px; }
+
+.sl-homepage h1 {
+  text-align: center;
+  color: #ff4747;
+  font-size: 20px;
+  font-family: fantasy; }
+
+.sl-homepage .sl-subtitle {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 18px;
+  color: grey; }
+
+.sl-homepage .sl-shelf-container {
+  margin-top: 60px;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 40px; }
+  .sl-homepage .sl-shelf-container .sl-shelf-item {
+    width: 70%;
+    height: auto;
+    padding: 12px; }
+
+.sl-homepage .sl-secondary-hero-container {
+  margin: 0 auto; }
+  .sl-homepage .sl-secondary-hero-container .sl-secondary-hero-image {
+    display: table;
+    background-size: contain;
+    margin: 6px;
+    width: 608px;
+    height: 384px;
+    background-repeat: no-repeat; }
+  .sl-homepage .sl-secondary-hero-container .sl-secondary-hero-header {
+    color: white;
+    font-size: 26px;
+    width: 46%;
+    text-align: center;
+    font-family: fantasy; }
+  .sl-homepage .sl-secondary-hero-container .sl-secondary-hero-link {
+    color: white;
+    font-size: 20px;
+    font-family: fantasy; }
+  .sl-homepage .sl-secondary-hero-container .sl-shop-now-text {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 274px; }
+  .sl-homepage .sl-secondary-hero-container .sl-about-text {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 34px; }
 @font-face {
   font-family: 'wonderLandFont';
   src: url(public/fonts/beyondWonderland.ttf) format("truetype"); }
@@ -12136,14 +12188,14 @@ md-tooltip {
     letter-spacing: 4px; }
     .sl-header .sl-nav a {
       text-decoration: none;
-      color: green; }
+      color: black; }
       .sl-header .sl-nav a:hover {
-        color: red; }
+        color: #ff4747; }
     .sl-header .sl-nav .sl-logo {
       padding-right: 13px; }
     .sl-header .sl-nav .sl-nav-items {
       padding-right: 6px; }
     .sl-header .sl-nav .sl-activeTab {
-      color: red; }
+      color: #ff4747; }
 
 /*# sourceMappingURL=app.css.map*/
