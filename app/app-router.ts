@@ -15,7 +15,7 @@ angular.module('app')
       })
       .state(about,{
         url:'/about',
-        template: require('./components/about/about.html')
+        template: '<about-page></about-page>'
       })
       .state(products,{
         url:'/products',

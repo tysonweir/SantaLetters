@@ -1,0 +1,96 @@
+.sl-section-container {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .sl-section-header {
+        position: relative;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 28px;
+        width: 554px;
+        font-family: cursive;
+        padding: 2px;
+        color: #327b32;
+        font-weight: bold;
+        top: 221px;
+    }
+    .sl-section-text {
+        width: 554px;
+        position: relative;
+        top: 252px;
+        text-align: left;
+        font-size: 25px;
+        margin: 0 auto;
+        color: rgb(255, 71, 71);
+        font-weight: bold;
+        font-family: fantasy;
+    }
+}
+.sl-second-section-container {
+    height: 500px;
+    background-position: center;
+
+    .sl-second-section-text {
+        width: 554px;
+        float: right;
+        position: relative;
+        top: 230px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        color: #ff4747;
+        font-weight: bold;
+        font-family: fantasy;
+        right: 85px;
+    }
+}
+.sl-third-section-container {
+    height: 700px;
+    background-position: center;
+
+    .sl-third-section-text {
+        width: 554px;
+        float: left;
+        position: relative;
+        top: 230px;
+        margin: auto;
+        text-align: center;
+        font-size: 23px;
+        color: #fff;
+        font-weight: bold;
+        font-family: fantasy;
+        left: 76px;
+    }
+    .sl-80-percent-container {
+        color: #33598a;
+        height: 171px;
+        background-color: #eaf2f5;
+        position: relative;
+        width: 4%;
+        text-align: center;
+        margin: 0 auto;
+        left: 67px;
+        top: 300px;
+    }
+    .sl-60-percent-container {
+        color: #fff;   
+        height: 139px;
+        background-color: #9a3557;
+        position: relative;
+        width: 4%;
+        text-align: center;
+        margin: 0 auto;
+        left: 131px;
+        top: 161px;
+    }
+    .sl-now-percent {
+        position: relative;
+        bottom: 19px;
+    }
+    .sl-past-percent {
+        position: relative;
+        bottom: 19px;
+        color: white;
+    }
+}

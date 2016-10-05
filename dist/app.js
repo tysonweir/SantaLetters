@@ -4907,7 +4907,7 @@ webpackJsonp([0],[
 	        })
 	            .state(about_1.MODULE_NAME, {
 	            url: '/about',
-	            template: __webpack_require__(27)
+	            template: '<about-page></about-page>'
 	        })
 	            .state(products_1.MODULE_NAME, {
 	            url: '/products',
@@ -4936,12 +4936,15 @@ webpackJsonp([0],[
 	angular.module(exports.MODULE_NAME, []);
 	var AboutComponent = (function () {
 	    function AboutComponent() {
+	        this.slAboutChristmas1 = __webpack_require__(67);
+	        this.slAboutChristmas2 = __webpack_require__(70);
+	        this.slAboutChristmas3 = __webpack_require__(71);
 	    }
 	    AboutComponent = __decorate([
 	        annotations_1.Component({
 	            selector: exports.MODULE_NAME + 'Page',
 	            template: __webpack_require__(27),
-	            style: __webpack_require__(28)
+	            style: __webpack_require__(68)
 	        })
 	    ], AboutComponent);
 	    return AboutComponent;
@@ -4953,15 +4956,10 @@ webpackJsonp([0],[
 /* 27 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>about page</div>"
+	module.exports = "<section class=\"sl-section-container\" ng-style=\"{'background-image': 'url({{$ctrl.slAboutChristmas1}})'}\">\n    <div class=\"sl-section-header\">A guy that just loved christmas</div>\n    <div class=\"sl-section-text\">\n        When Josh was younger he loved writing a letter santa clause, It created a love for the christmas spirit. He now wants to\n        spread the christmas spirit to a generation where that spirit is ding, so he started Santa Letters. Where you can\n        write personal letters to Santa.\n    </div>\n</section>\n<section class=\"sl-second-section-container\" ng-style=\"{'background-image': 'url({{$ctrl.slAboutChristmas2}})'}\">\n    <div class=\"sl-second-section-text\">\n        We just want everyone to have a chance of being able to send christmas letters to santa, Giving an opertunity for a child\n        to live their dreams. Not only let our children to dream but expand their imaginations so that their future will\n        be bright and full of cheer.\n    </div>\n</section>\n<section class=\"sl-third-section-container\" ng-style=\"{'background-image': 'url({{$ctrl.slAboutChristmas3}})'}\">\n    <div class=\"sl-section-header\"></div>\n    <div class=\"sl-third-section-text\">\n        Fully 86 percent in the poll believed in Santa as a child. And despite the multiethnic nature of the country, more than 60\n        percent of those with children at home consider Santa important in their holiday celebrations now. Our goal is to\n        raise this back up to the 80 percent.\n    </div>\n    <div class=\"sl-80-percent-container\">\n        <div class=\"sl-past-percent\">Past</div>\n        <div>\n            <span>80%</span>\n        </div>\n    </div>\n    <div class=\"sl-60-percent-container\">\n        <div class=\"sl-now-percent\">Now</div>\n        <div>\n            <span>60%</span>\n        </div>\n    </div>\n</section>"
 
 /***/ },
-/* 28 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
+/* 28 */,
 /* 29 */,
 /* 30 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5038,7 +5036,7 @@ webpackJsonp([0],[
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"sl-homepage\" layout=\"column\">\n    <div class=\"sl-hero-contianer\">\n        <div class=\"sl-letter-writing-image\" ng-style=\"{'background-image': 'url({{$ctrl.heroImage}})'}\">\n            <div class=\"sl-hero-text-contianer\">\n                <div>You better hurry!!<br>Santa Clause is coming to town.</div>\n                <div>Write a letter to Santa Clause</div>\n                <md-button class=\"sl-hero-button\" ui-sref=\"letter-layouts\">Start Here</md-button>\n            </div>\n        </div>\n    </div>\n    <div class=\"sl-feature-text\">\n        <h1>Featured Letters</h1>\n        <div class=\"sl-subtitle\">Letters written from Santa himself.</div>\n    </div>\n    <div class=\"sl-shelf-container\" layout=\"row\">\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productOne}}\">\n            <div>$5 | letter</div>\n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productTwo}}\">\n            <div>$8 | twin pack</div>            \n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productThree}}\">\n            <div>$10 | triplet pack</div>            \n        </div>\n    </div>\n    <div class=\"sl-secondary-hero-container\" layout=\"row\">\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slShopNow}})'}\">\n            <div class=\"sl-shop-now-text\">\n                <div class=\"sl-secondary-hero-header\">Our Best Selling Letters</div>\n                <div class=\"sl-secondary-hero-link\">Shop now</div>\n            </div>\n            </div>\n        </div>\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slAbout}})'}\">  \n                <div class=\"sl-about-text\">\n                    <div class=\"sl-secondary-hero-header\">Learn how Santa Clause Letter can to be.</div>\n                    <div class=\"sl-secondary-hero-link\">Long long time ago</div>\n                </div>\n            </div> \n        </div>\n    </div>\n</div>"
+	module.exports = "<div class=\"sl-homepage\" layout=\"column\">\n    <div class=\"sl-hero-contianer\">\n        <div class=\"sl-letter-writing-image\" ng-style=\"{'background-image': 'url({{$ctrl.heroImage}})'}\">\n            <div class=\"sl-hero-text-contianer\">\n                <div>You better hurry!!<br>Santa Clause is coming to town.</div>\n                <div>Write a letter to Santa Clause</div>\n                <md-button class=\"sl-hero-button\" ui-sref=\"letter-layouts\">Start Here</md-button>\n            </div>\n        </div>\n    </div>\n    <div class=\"sl-feature-text\">\n        <h1>Featured Letters</h1>\n        <div class=\"sl-subtitle\">Letters written from Santa himself.</div>\n    </div>\n    <div class=\"sl-shelf-container\" layout=\"row\">\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productOne}}\">\n            <div>$5 | letter</div>\n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productTwo}}\">\n            <div>$8 | twin pack</div>            \n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productThree}}\">\n            <div>$10 | triplet pack</div>            \n        </div>\n    </div>\n    <div class=\"sl-secondary-hero-container\" layout=\"row\">\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slShopNow}})'}\" ui-sref=\"letter-layouts\">\n            <div class=\"sl-shop-now-text\">\n                <div class=\"sl-secondary-hero-header\">Our Best Selling Letters</div>\n                <div class=\"sl-secondary-hero-link\">Shop now</div>\n            </div>\n            </div>\n        </div>\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slAbout}})'}\" ui-sref=\"about\">  \n                <div class=\"sl-about-text\">\n                    <div class=\"sl-secondary-hero-header\">Learn how Santa Clause Letter can to be.</div>\n                    <div class=\"sl-secondary-hero-link\">Long long time ago</div>\n                </div>\n            </div> \n        </div>\n    </div>\n</div>"
 
 /***/ },
 /* 38 */
@@ -5217,13 +5215,47 @@ webpackJsonp([0],[
 /* 56 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--Header-->\n<!--todo: hamburger-->\n<div class=\"sl-header\">\n    <!--productLogo-->\n    <img ng-src=\"{{$ctrl.logoImage}}\">\n    \n    <nav class=\"sl-nav wonderland-text\">\n        <a class=\"sl-logo\" ui-sref=\"home\" ui-sref-active=\"sl-activeTab\">Santa Letters</a>\n        <a class=\"sl-nav-items\" ui-sref=\"products\" ui-sref-active=\"sl-activeTab\">Products</a>\n        <a class=\"sl-nav-items\" ui-sref=\"letter-layouts\" ui-sref-active=\"sl-activeTab\">Letter Types</a>\n        <a class=\"sl-nav-items\" ui-sref=\"about\" ui-sref-active=\"sl-activeTab\">About</a>\n    </nav>\n</div>"
+	module.exports = "<!--Header-->\n<!--todo: hamburger-->\n<div class=\"sl-header\">\n    <!--productLogo-->\n    <img ng-src=\"{{$ctrl.logoImage}}\">\n    \n    <nav class=\"sl-nav\">\n        <a class=\"sl-logo\" ui-sref=\"home\" ui-sref-active=\"sl-activeTab\">Santa Letters</a>\n        <a class=\"sl-nav-items\" ui-sref=\"products\" ui-sref-active=\"sl-activeTab\">Products</a>\n        <a class=\"sl-nav-items\" ui-sref=\"letter-layouts\" ui-sref-active=\"sl-activeTab\">Letter Types</a>\n        <a class=\"sl-nav-items\" ui-sref=\"about\" ui-sref-active=\"sl-activeTab\">About</a>\n    </nav>\n</div>"
 
 /***/ },
 /* 57 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "5006887be177434f45cacb59a61fc731.jpg";
+
+/***/ },
+/* 68 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 69 */,
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "7d519c80cd5dbac7647ec4791d2ada23.jpg";
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "fe073c21ea4e2c6f32bcd6e9084943c9.jpg";
 
 /***/ }
 ]);
