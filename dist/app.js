@@ -4650,12 +4650,12 @@ webpackJsonp([0],[
 		"./annotations/service.ts": 24,
 		"./app-module.ts": 16,
 		"./app-router.ts": 25,
-		"./app.ts": 43,
+		"./app.ts": 48,
 		"./components/about/about.ts": 26,
-		"./components/header/header.ts": 48,
+		"./components/header/header.ts": 53,
 		"./components/home/home.ts": 30,
-		"./components/letter-layouts/letter-layouts.ts": 39,
-		"./components/products/products.ts": 35,
+		"./components/letter-layouts/letter-layouts.ts": 44,
+		"./components/products/products.ts": 40,
 		"./utility/string-extensions.ts": 15
 	};
 	function webpackContext(req) {
@@ -4895,8 +4895,8 @@ webpackJsonp([0],[
 	"use strict";
 	var about_1 = __webpack_require__(26);
 	var home_1 = __webpack_require__(30);
-	var products_1 = __webpack_require__(35);
-	var letter_layouts_1 = __webpack_require__(39);
+	var products_1 = __webpack_require__(40);
+	var letter_layouts_1 = __webpack_require__(44);
 	angular.module('app')
 	    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 	        $urlRouterProvider.otherwise('/');
@@ -4911,11 +4911,11 @@ webpackJsonp([0],[
 	        })
 	            .state(products_1.MODULE_NAME, {
 	            url: '/products',
-	            template: __webpack_require__(36)
+	            template: __webpack_require__(41)
 	        })
 	            .state(letter_layouts_1.MODULE_NAME, {
 	            url: '/letters',
-	            template: __webpack_require__(40)
+	            template: __webpack_require__(45)
 	        });
 	    }]);
 
@@ -4979,18 +4979,18 @@ webpackJsonp([0],[
 	var HomeComponent = (function () {
 	    function HomeComponent() {
 	        this.heroImage = __webpack_require__(31);
-	        this.productOne = __webpack_require__(62);
-	        this.productTwo = __webpack_require__(63);
-	        this.productThree = __webpack_require__(64);
-	        this.slAbout = __webpack_require__(65);
-	        this.slShopNow = __webpack_require__(66);
+	        this.productOne = __webpack_require__(32);
+	        this.productTwo = __webpack_require__(33);
+	        this.productThree = __webpack_require__(34);
+	        this.slAbout = __webpack_require__(35);
+	        this.slShopNow = __webpack_require__(36);
 	        this.stringhere = 'here I am';
 	    }
 	    HomeComponent = __decorate([
 	        annotations_1.Component({
 	            selector: exports.MODULE_NAME + 'Page',
-	            template: __webpack_require__(32),
-	            style: __webpack_require__(33)
+	            template: __webpack_require__(37),
+	            style: __webpack_require__(38)
 	        })
 	    ], HomeComponent);
 	    return HomeComponent;
@@ -5006,19 +5006,49 @@ webpackJsonp([0],[
 
 /***/ },
 /* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "3f77a6c7782d6eb7ae1b2e78400b9fd6.jpg";
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "fd395ca3d69bade9e493621e3fb7c16d.png";
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "832d5ee5999fd71c1726a719e70d7806.png";
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ca41f9b495993b4ee143fad451d5dbec.jpg";
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a0a0b5b458732ed34232dbc40931f2aa.jpg";
+
+/***/ },
+/* 37 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"sl-homepage\" layout=\"column\">\n    <div class=\"sl-hero-contianer\">\n        <div class=\"sl-letter-writing-image\" ng-style=\"{'background-image': 'url({{$ctrl.heroImage}})'}\">\n            <div class=\"sl-hero-text-contianer\">\n                <div>You better hurry!!<br>Santa Clause is coming to town.</div>\n                <div>Write a letter to Santa Clause</div>\n                <md-button class=\"sl-hero-button\" ui-sref=\"letter-layouts\">Start Here</md-button>\n            </div>\n        </div>\n    </div>\n    <div class=\"sl-feature-text\">\n        <h1>Featured Letters</h1>\n        <div class=\"sl-subtitle\">Letters written from Santa himself.</div>\n    </div>\n    <div class=\"sl-shelf-container\" layout=\"row\">\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productOne}}\">\n            <div>$5 | letter</div>\n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productTwo}}\">\n            <div>$8 | twin pack</div>            \n        </div>\n        <div flex>\n            <img class=\"sl-shelf-item\" ng-src=\"{{$ctrl.productThree}}\">\n            <div>$10 | triplet pack</div>            \n        </div>\n    </div>\n    <div class=\"sl-secondary-hero-container\" layout=\"row\">\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slShopNow}})'}\">\n            <div class=\"sl-shop-now-text\">\n                <div class=\"sl-secondary-hero-header\">Our Best Selling Letters</div>\n                <div class=\"sl-secondary-hero-link\">Shop now</div>\n            </div>\n            </div>\n        </div>\n        <div>\n            <div class=\"sl-secondary-hero-image\" ng-style=\"{'background-image': 'url({{$ctrl.slAbout}})'}\">  \n                <div class=\"sl-about-text\">\n                    <div class=\"sl-secondary-hero-header\">Learn how Santa Clause Letter can to be.</div>\n                    <div class=\"sl-secondary-hero-link\">Long long time ago</div>\n                </div>\n            </div> \n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 33 */
+/* 38 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 34 */,
-/* 35 */
+/* 39 */,
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5037,8 +5067,8 @@ webpackJsonp([0],[
 	    ProductComponent = __decorate([
 	        annotations_1.Component({
 	            selector: exports.MODULE_NAME + 'Page',
-	            template: __webpack_require__(36),
-	            style: __webpack_require__(37)
+	            template: __webpack_require__(41),
+	            style: __webpack_require__(42)
 	        })
 	    ], ProductComponent);
 	    return ProductComponent;
@@ -5047,20 +5077,20 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>product page</div>"
 
 /***/ },
-/* 37 */
+/* 42 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 38 */,
-/* 39 */
+/* 43 */,
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5079,8 +5109,8 @@ webpackJsonp([0],[
 	    LetterLayoutComponent = __decorate([
 	        annotations_1.Component({
 	            selector: exports.MODULE_NAME + 'Page',
-	            template: __webpack_require__(40),
-	            style: __webpack_require__(41)
+	            template: __webpack_require__(45),
+	            style: __webpack_require__(46)
 	        })
 	    ], LetterLayoutComponent);
 	    return LetterLayoutComponent;
@@ -5089,20 +5119,20 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 40 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>Letter-layout page</div>"
 
 /***/ },
-/* 41 */
+/* 46 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 42 */,
-/* 43 */
+/* 47 */,
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5119,8 +5149,8 @@ webpackJsonp([0],[
 	    AppComponent = __decorate([
 	        annotations_1.Component({
 	            selector: 'app',
-	            template: __webpack_require__(44),
-	            style: __webpack_require__(45)
+	            template: __webpack_require__(49),
+	            style: __webpack_require__(50)
 	        })
 	    ], AppComponent);
 	    return AppComponent;
@@ -5129,21 +5159,21 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 44 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "<span>LOADING</span>"
 
 /***/ },
-/* 45 */
+/* 50 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 46 */,
-/* 47 */,
-/* 48 */
+/* 51 */,
+/* 52 */,
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5156,14 +5186,14 @@ webpackJsonp([0],[
 	var annotations_1 = __webpack_require__(21);
 	var HeaderComponent = (function () {
 	    function HeaderComponent() {
-	        this.logoImage = __webpack_require__(49);
-	        this.headerImage = __webpack_require__(50);
+	        this.logoImage = __webpack_require__(54);
+	        this.headerImage = __webpack_require__(55);
 	    }
 	    HeaderComponent = __decorate([
 	        annotations_1.Component({
 	            selector: 'header',
-	            template: __webpack_require__(51),
-	            style: __webpack_require__(52)
+	            template: __webpack_require__(56),
+	            style: __webpack_require__(57)
 	        })
 	    ], HeaderComponent);
 	    return HeaderComponent;
@@ -5172,67 +5202,28 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 49 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "11217a57e3bbc7e3307079618dfdf51c.png";
 
 /***/ },
-/* 50 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "b66f6c4e75231e8c8ff791364b3f94d8.png";
 
 /***/ },
-/* 51 */
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Header-->\n<!--todo: hamburger-->\n<div class=\"sl-header\">\n    <!--productLogo-->\n    <img ng-src=\"{{$ctrl.logoImage}}\">\n    \n    <nav class=\"sl-nav wonderland-text\">\n        <a class=\"sl-logo\" ui-sref=\"home\" ui-sref-active=\"sl-activeTab\">Santa Letters</a>\n        <a class=\"sl-nav-items\" ui-sref=\"products\" ui-sref-active=\"sl-activeTab\">Products</a>\n        <a class=\"sl-nav-items\" ui-sref=\"letter-layouts\" ui-sref-active=\"sl-activeTab\">Letter Types</a>\n        <a class=\"sl-nav-items\" ui-sref=\"about\" ui-sref-active=\"sl-activeTab\">About</a>\n    </nav>\n</div>"
 
 /***/ },
-/* 52 */
+/* 57 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "3f77a6c7782d6eb7ae1b2e78400b9fd6.jpg";
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "fd395ca3d69bade9e493621e3fb7c16d.png";
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "832d5ee5999fd71c1726a719e70d7806.png";
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "ca41f9b495993b4ee143fad451d5dbec.jpg";
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "a0a0b5b458732ed34232dbc40931f2aa.jpg";
 
 /***/ }
 ]);
