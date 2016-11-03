@@ -1,8 +1,9 @@
 import 'angular';
 import 'angular-material';
 import 'angular-material/angular-material.scss';
+import 'angular-ui-router'
 import './utility/string-extensions';
-import { module } from './app-module';
+import { module } from './app-module'
 
 
 

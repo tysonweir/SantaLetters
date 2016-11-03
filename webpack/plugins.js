@@ -1,6 +1,7 @@
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 var SETTINGS = require('./settings');
 
@@ -39,12 +40,13 @@ var plugins = {
 	},
 
 	environment: new webpack.EnvironmentPlugin(['NODE_ENV']),
+	extractCss: new ExtractTextPlugin('[name].css'),
 
 	clean: new WebpackCleanupPlugin()
 };
 
 module.exports = {
 	test: [plugins.ignoreFiles(/bootstrap/), plugins.jquery],
-	dev: [plugins.ignoreFiles(/karma|spec|test/), plugins.jquery, plugins.htmlWebpack, plugins.vendor, plugins.browserSync],
-	prod: [plugins.ignoreFiles(/karma|spec|test/), plugins.jquery, plugins.htmlWebpack, plugins.vendor, plugins.uglify, plugins.clean]
+	dev: [plugins.ignoreFiles(/karma|spec|test/), plugins.jquery, plugins.htmlWebpack, plugins.vendor, plugins.browserSync, plugins.extractCss],
+	prod: [plugins.ignoreFiles(/karma|spec|test/), plugins.jquery, plugins.htmlWebpack, plugins.vendor, plugins.uglify, plugins.clean, plugins.extractCss]
 };

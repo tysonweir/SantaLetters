@@ -19,5 +19,22 @@ module.exports = {
 	plugins: plugins[SETTINGS.ENVIRONMENT],
 	module: {
 		loaders: loaders
+	},
+
+	imageWebpackLoader: {
+		pngquant: {
+			quality: "65-90",
+			speed: 4
+		},
+		svgo: {
+			plugins: [
+				{
+					removeViewBox: false
+				},
+				{
+					removeEmptyAttrs: false
+				}
+			]
+		}
 	}
 };

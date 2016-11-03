@@ -1,0 +1,35 @@
+.sl-header{
+    background-image: url("headerImage.png");
+    
+    img {
+        width:80px;
+        height: auto;  
+        margin-left: 56px;
+    }
+    
+    .sl-nav{
+        padding: 2px;
+        font-size: 25px;
+        padding: 3px;
+        cursor: pointer;
+        //letter-spacing: 2px;
+        font-family: fantasy;
+         
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: #ff4747;
+            }
+        }  
+        .sl-logo{
+            padding-right: 13px;
+        }
+        .sl-nav-items{
+            padding-right: 6px;
+        }
+        .sl-activeTab{
+             color: #ff4747;;
+        }
+    }
+}
